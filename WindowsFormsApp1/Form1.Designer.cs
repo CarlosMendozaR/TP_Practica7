@@ -64,6 +64,9 @@
             this.lbTienda2 = new System.Windows.Forms.Label();
             this.lbPrecioTotal = new System.Windows.Forms.Label();
             this.lbTotalPiezas = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.rdbDatos = new System.Windows.Forms.RadioButton();
+            this.rdbObjetos = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // btnCrearInventario
@@ -74,6 +77,7 @@
             this.btnCrearInventario.TabIndex = 0;
             this.btnCrearInventario.Text = "Crear Inventario de ambas Tiendas";
             this.btnCrearInventario.UseVisualStyleBackColor = true;
+            this.btnCrearInventario.Click += new System.EventHandler(this.btnCrearInventario_Click);
             // 
             // label1
             // 
@@ -293,6 +297,7 @@
             this.btnTotalPiezas.TabIndex = 25;
             this.btnTotalPiezas.Text = "Total de Piezas";
             this.btnTotalPiezas.UseVisualStyleBackColor = true;
+            this.btnTotalPiezas.Click += new System.EventHandler(this.btnTotalPiezas_Click);
             // 
             // btnTienda1
             // 
@@ -302,6 +307,7 @@
             this.btnTienda1.TabIndex = 26;
             this.btnTienda1.Text = "Precio Total Tienda 1";
             this.btnTienda1.UseVisualStyleBackColor = true;
+            this.btnTienda1.Click += new System.EventHandler(this.btnTienda1_Click);
             // 
             // btnTienda2
             // 
@@ -311,6 +317,7 @@
             this.btnTienda2.TabIndex = 27;
             this.btnTienda2.Text = "Precio Total Tienda 2";
             this.btnTienda2.UseVisualStyleBackColor = true;
+            this.btnTienda2.Click += new System.EventHandler(this.btnTienda2_Click);
             // 
             // btnPrecioTotal
             // 
@@ -320,6 +327,7 @@
             this.btnPrecioTotal.TabIndex = 28;
             this.btnPrecioTotal.Text = "Precio Total";
             this.btnPrecioTotal.UseVisualStyleBackColor = true;
+            this.btnPrecioTotal.Click += new System.EventHandler(this.btnPrecioTotal_Click);
             // 
             // lbTienda1
             // 
@@ -357,11 +365,44 @@
             this.lbTotalPiezas.TabIndex = 32;
             this.lbTotalPiezas.Text = " ";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(76, 218);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.TabIndex = 33;
+            // 
+            // rdbDatos
+            // 
+            this.rdbDatos.AutoSize = true;
+            this.rdbDatos.Location = new System.Drawing.Point(79, 203);
+            this.rdbDatos.Name = "rdbDatos";
+            this.rdbDatos.Size = new System.Drawing.Size(154, 21);
+            this.rdbDatos.TabIndex = 34;
+            this.rdbDatos.TabStop = true;
+            this.rdbDatos.Text = "Con datos comunes";
+            this.rdbDatos.UseVisualStyleBackColor = true;
+            // 
+            // rdbObjetos
+            // 
+            this.rdbObjetos.AutoSize = true;
+            this.rdbObjetos.Location = new System.Drawing.Point(79, 230);
+            this.rdbObjetos.Name = "rdbObjetos";
+            this.rdbObjetos.Size = new System.Drawing.Size(104, 21);
+            this.rdbObjetos.TabIndex = 34;
+            this.rdbObjetos.TabStop = true;
+            this.rdbObjetos.Text = "Con objetos";
+            this.rdbObjetos.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 573);
+            this.Controls.Add(this.rdbObjetos);
+            this.Controls.Add(this.rdbDatos);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lbTotalPiezas);
             this.Controls.Add(this.lbPrecioTotal);
             this.Controls.Add(this.lbTienda2);
@@ -443,6 +484,9 @@
         private System.Windows.Forms.Label lbTienda2;
         private System.Windows.Forms.Label lbPrecioTotal;
         private System.Windows.Forms.Label lbTotalPiezas;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton rdbDatos;
+        private System.Windows.Forms.RadioButton rdbObjetos;
     }
 }
 
