@@ -8,5 +8,11 @@ namespace WindowsFormsApp1
         public float precio;
         public string numserie;
 
+        public Objetos(byte partes, float precio, string numserie)
+        {
+            this.partes = partes;
+            this.precio = precio;
+            this.numserie = numserie;
+        }
     }
 }

@@ -9,7 +9,6 @@ namespace WindowsFormsApp1
         Matriz m1 = new Matriz();
         Matriz m2 = new Matriz();
 
-        Objetos pieza = new Objetos();
         Objetos[,] vecinventarios = new Objetos[2,3];
         public Form1()
         {
@@ -22,29 +21,31 @@ namespace WindowsFormsApp1
             string cadena2 = txtbPartes4.Text + "," + txtbPrecio4.Text + "," + txtbSerie4.Text + ";" + txtbPartes5.Text + "," + txtbPrecio5.Text + "," + txtbSerie5.Text + ";" + txtbPartes6.Text + "," + txtbPrecio6.Text + "," + txtbSerie6.Text;
             m1.Leer(cadena1);
             m2.Leer(cadena2);
+
+            Objetos pieza1 = new Objetos((byte)m1.matriz[0, 0], m1.matriz[0, 1], m1.matriz[0, 2].ToString());
+            Objetos pieza2 = new Objetos((byte)m1.matriz[1, 0], m1.matriz[1, 1], m1.matriz[1, 2].ToString());
+            Objetos pieza3 = new Objetos((byte)m1.matriz[2, 0], m1.matriz[2, 1], m1.matriz[2, 2].ToString());
+            Objetos pieza4 = new Objetos((byte)m2.matriz[0, 0], m2.matriz[0, 1], m2.matriz[0, 2].ToString());
+            Objetos pieza5 = new Objetos((byte)m2.matriz[1, 0], m2.matriz[1, 1], m2.matriz[1, 2].ToString());
+            Objetos pieza6 = new Objetos((byte)m2.matriz[2, 0], m2.matriz[2, 1], m2.matriz[2, 2].ToString());
+
+            vecinventarios[0, 0] = pieza1;
+            vecinventarios[0, 1] = pieza2;
+            vecinventarios[0, 2] = pieza3;
+            vecinventarios[1, 0] = pieza4;
+            vecinventarios[1, 1] = pieza5;
+            vecinventarios[1, 2] = pieza6;
+
             label10.Text = "Inventario creado!";
 
-            //lo siguiente es para introducir los datos en una matriz multid. de objetos
-            for (int i = 0; i < 1; i++)
+            if (rdbObjetos.Checked)
             {
-                for (int j = 0; j < 2; j++)
+                for (int a = 0; a < 2; a++)
                 {
-                    pieza.partes = (byte)m1.matriz[0, 0];
-                    pieza.precio = m1.matriz[0, 1];
-                    pieza.numserie = Convert.ToString(m1.matriz[0, 2]);
-                    vecinventarios[i, j] = pieza;
-                    //0,0  0,1  0,2
-                    //1,0  1,1  1,2
-                    //según yó está distribuido así
-                }
-            }
-
-
-            for(int a=0; a<1; a++)
-            {
-                for (int b = 0; b < 2; b++)
-                {
-                    label17.Text=label17.Text+vecinventarios[a,b].partes + "      " + vecinventarios[a,b].precio + "      " + vecinventarios[a,b].numserie+"\n";
+                    for (int b = 0; b < 3; b++)
+                    {
+                        label17.Text = label17.Text + vecinventarios[a, b].partes + "      " + vecinventarios[a, b].precio + "      " + vecinventarios[a, b].numserie + "\n";
+                    }
                 }
             }
         }

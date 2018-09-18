@@ -67,14 +67,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.rdbDatos = new System.Windows.Forms.RadioButton();
             this.rdbObjetos = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -377,7 +371,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(76, 218);
+            this.label10.Location = new System.Drawing.Point(357, 92);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 17);
             this.label10.TabIndex = 33;
@@ -404,35 +398,15 @@
             this.rdbObjetos.Text = "Con objetos";
             this.rdbObjetos.UseVisualStyleBackColor = true;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(31, 304);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(246, 17);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "Sólo puede acceder a estas opciones";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.label14.Location = new System.Drawing.Point(31, 321);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(135, 17);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "con datos comunes.";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(846, 144);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(246, 17);
+            this.label15.Size = new System.Drawing.Size(218, 17);
             this.label15.TabIndex = 37;
-            this.label15.Text = "Sólo puede acceder a estas opciones";
+            this.label15.Text = "Solo disponible utilizando objetos";
             // 
             // label16
             // 
@@ -440,55 +414,17 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(846, 161);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 17);
+            this.label16.Size = new System.Drawing.Size(114, 17);
             this.label16.TabIndex = 38;
-            this.label16.Text = "con objetos.";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(849, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 23);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Orden Ascendente";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(849, 404);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 23);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Orden Descendente";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(846, 188);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(238, 17);
-            this.label11.TabIndex = 43;
-            this.label11.Text = "¿De qué manera le gustaria ordenar";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(849, 209);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(237, 17);
-            this.label12.TabIndex = 44;
-            this.label12.Text = "los números de serie del inventario?";
+            this.label16.Text = "Tu inventario es:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(849, 272);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(54, 17);
+            this.label17.Size = new System.Drawing.Size(0, 17);
             this.label17.TabIndex = 45;
-            this.label17.Text = "label17";
             // 
             // Form1
             // 
@@ -496,14 +432,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 596);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.rdbObjetos);
             this.Controls.Add(this.rdbDatos);
             this.Controls.Add(this.label10);
@@ -591,14 +521,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.RadioButton rdbDatos;
         private System.Windows.Forms.RadioButton rdbObjetos;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
     }
 }
