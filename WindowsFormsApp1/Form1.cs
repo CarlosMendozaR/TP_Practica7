@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace WindowsFormsApp1
 {
@@ -8,6 +9,8 @@ namespace WindowsFormsApp1
     {
         Matriz m1 = new Matriz();
         Matriz m2 = new Matriz();
+
+        ArrayList colserie = new ArrayList();
 
         Objetos[,] vecinventarios = new Objetos[2,3];
         public Form1()
@@ -48,6 +51,15 @@ namespace WindowsFormsApp1
                     }
                 }
             }
+
+            for (int a = 0; a < 2; a++)
+            {
+                for (int b = 0; b < 3; b++)
+                {
+                    colserie.Add(vecinventarios[a,b].partes);
+                }
+            }
+            label17.Text = 
         }
 
         private void btnTienda1_Click(object sender, EventArgs e)
