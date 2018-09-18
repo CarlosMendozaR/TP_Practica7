@@ -8,6 +8,9 @@ namespace WindowsFormsApp1
     {
         Matriz m1 = new Matriz();
         Matriz m2 = new Matriz();
+
+        Objetos pieza = new Objetos();
+        Objetos[,] vecinventarios = new Objetos[2,3];
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +23,30 @@ namespace WindowsFormsApp1
             m1.Leer(cadena1);
             m2.Leer(cadena2);
             label10.Text = "Inventario creado!";
+
+            //lo siguiente es para introducir los datos en una matriz multid. de objetos
+            for (int i = 0; i < 1; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    pieza.partes = (byte)m1.matriz[0, 0];
+                    pieza.precio = m1.matriz[0, 1];
+                    pieza.numserie = Convert.ToString(m1.matriz[0, 2]);
+                    vecinventarios[i, j] = pieza;
+                    //0,0  0,1  0,2
+                    //1,0  1,1  1,2
+                    //según yó está distribuido así
+                }
+            }
+
+
+            for(int a=0; a<1; a++)
+            {
+                for (int b = 0; b < 2; b++)
+                {
+                    label17.Text=label17.Text+vecinventarios[a,b].partes + "      " + vecinventarios[a,b].precio + "      " + vecinventarios[a,b].numserie+"\n";
+                }
+            }
         }
 
         private void btnTienda1_Click(object sender, EventArgs e)

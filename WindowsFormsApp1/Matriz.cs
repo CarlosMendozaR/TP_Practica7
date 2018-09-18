@@ -4,7 +4,7 @@ namespace WindowsFormsApp1
 {
     class Matriz
     {
-        private float[,] matriz = new float[3, 3];
+        public float[,] matriz = new float[3, 3];
 
         public Matriz()
         {
