@@ -59,7 +59,11 @@ namespace WindowsFormsApp1
                     colserie.Add(vecinventarios[a,b].partes);
                 }
             }
-            label17.Text = 
+
+            for (int i=0; i<6; i++)
+            {
+                label17.Text = label17.Text + colserie[i] + "\n";
+            }
         }
 
         private void btnTienda1_Click(object sender, EventArgs e)
